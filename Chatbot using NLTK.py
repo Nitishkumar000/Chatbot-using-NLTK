@@ -42,7 +42,7 @@ QA = [
     ],
     [
         r"(.*) (created you|made you) ?",
-        ["I am a result of Nakul's exploration of NLTK Library", ]
+        ["I am a Chatbot Created By Nitish Using NLTK Library", ]
     ],
     [
         r"(.*) (location|city) ?",
