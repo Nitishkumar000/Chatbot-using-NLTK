@@ -4,23 +4,19 @@ A chatbot  is a computer program or an artificial intelligence which conducts a 
 
 NLTK has a module, nltk.chat, which simplifies building these engines by providing a generic framework.
 
-Chat: This is a class that has all the logic that is used by the chatbot.
-
-Reflections: This is a dictionary that contains a set of input values and its corresponding output values. It is an optional dictionary 
+Chat: This is a class that has all the logic that es and its corresponding output values. It is an optional dictionary 
 that you can use. You can also create your own dictionary in the same format as below and use it in your code.
+is used by the chatbot.
 
+Reflections: This is a dictionary that contains a set of input valu
 The nltk.chat chatbots work on the regex of keywords present in your question. So you can add any number of questions in a proper format so that your chatbot doesn’t get confused in determining the regex.
 
 Steps:
 
-1) Import the necesrray libraries
+1. Importing Libraries: The first step is to import the necessary libraries from the NLTK module.
+2. Creating the QA List: This list contains pairs of regular expressions and responses. Each question pattern is matched against user input, and the corresponding response is provided.
+3. Defining the Welcome Message: A function welcome_message() is defined to greet the user and provide instructions on how to interact with the chatbot.
+4. Creating an Instance of the Chat Class: An instance of the Chat class is created using the QA list and the reflections dictionary, which helps in handling pronouns.
+5. Triggering the Conversation: The chat.converse() method is called to start the interaction with the user when the script is run.
 
-2) Create a list of question & Answers.
-      
-      2.1) Use Regex for framing your questions
-
-3) Define a function for a welcome message 
-
-4) Create an instance of Chat class containing pairs(list of tuples containing set of question and answers) and reflections
-
-5) To trigger the conversation invoke the chat.coverse()
+This structure provides me with a simple but effective way to create a chatbot using the NLTK library, allowing for easy expansion and customization. I can add more patterns and responses to the QA list as needed.
